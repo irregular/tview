@@ -105,6 +105,7 @@ func (i *InputField) SetText(text string) *InputField {
 	if i.changed != nil {
 		i.changed(text)
 	}
+	i.cursorPos = 0
 	return i
 }
 
